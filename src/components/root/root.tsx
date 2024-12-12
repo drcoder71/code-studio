@@ -7,7 +7,9 @@ const Root = ({children}: {
   return (
     <div className="min-h-[100vh]">
         <Navbar />
-        {children}
+        <main className="py-6">
+            {children}
+        </main>
         {/* footer */}
     </div>
   )
