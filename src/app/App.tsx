@@ -1,0 +1,21 @@
+import Root from "@/components/root/root"
+import { CodeStudioPage, HomePage, SnippetPage } from "@/pages"
+import { Route, Routes } from 'react-router-dom'
+
+const App = () => {
+  return (
+    <div className="min-h-[100vh]">
+      <Root>
+        <Routes>
+          <Route path="/" element={<HomePage />}/>
+          <Route path="snippet">
+            <Route path=":id" element={<SnippetPage />}/>
+          </Route>
+          <Route path="code-studio" element={<CodeStudioPage />}/>
+        </Routes>
+      </Root>
+    </div>
+  )
+}
+
+export default App
