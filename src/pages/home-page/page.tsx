@@ -4,6 +4,7 @@ const HomePage = () => {
   return (
     <div className='text-popover container mx-auto'>
         <HeaderComponent />
+        
     </div>
   )
 }

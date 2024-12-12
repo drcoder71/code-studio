@@ -8,6 +8,7 @@ const Root = ({children}: {
     <div className="min-h-[100vh]">
         <Navbar />
         {children}
+        {/* footer */}
     </div>
   )
 }
