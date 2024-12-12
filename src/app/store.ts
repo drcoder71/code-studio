@@ -1,8 +1,11 @@
+import { CodeEditorReducer } from '@/features'
 import { configureStore } from '@reduxjs/toolkit'
 // ...
 
 export const store = configureStore({
-  reducer: {}
+  reducer: {
+    codeeditor: CodeEditorReducer
+  }
 })
 
 // Infer the `RootState`,  `AppDispatch`, and `AppStore` types from the store itself
