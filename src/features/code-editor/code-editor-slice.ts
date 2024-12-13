@@ -3,7 +3,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit"
 
 export type initialStateTypes = {
     codeeditor: {
-        inputText: string,
+        inputText: any,
         outputText: string,
         options: {
             language: string,
