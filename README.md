@@ -8,10 +8,6 @@ Ushbu dastur dasturlashni endi o'rganayotgan insonlar uchun va interview topshir
 
 Code yozib o'rganishdan tashqari, siz yozgan kodlaringizni yaqin do'stlaringizga ham ulashish imkoniyati mavjud.
 
-- Buning uchun siz `sign-up` tugmasini bosib ro'yxatdan o'tishingiz kerak.
+## Programming Languages
 
-```js
-const foo = () => {
-  console.log("Hello World")
-}
-```
+Endilikda siz Javascript, Typescript, Java, C++, Python, C#, Ruby, Go dasturlash tillarida kod yoza olasiz.
