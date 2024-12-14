@@ -18,7 +18,7 @@ const CodeEditorHeader = () => {
     }
 
     const resetInputFn = () => {
-        dispatch(setInput('//some comment'))
+        dispatch(setInput('// some comment'))
     }
 
     const runCode = async () => {
@@ -50,9 +50,9 @@ const CodeEditorHeader = () => {
                 </div>
             </div>
             <div className='w-1/2 flex items-center justify-end gap-4'>
-                <ButtonCommon label='' className='text-5xl rounded-sm text-popover bg-primary' icon={<TbTableOptions />} clickHandler={() => {}}/>
                 <ButtonCommon label='' className='text-3xl rounded-sm text-popover bg-primary' icon={<BiReset />} clickHandler={() => resetInputFn()}/>
-                <ButtonCommon label='share' icon={<IoMdShareAlt />} className='text-popover px-3 py-3 bg-primary rounded-sm' clickHandler={() => {}} />
+                <ButtonCommon label='' className='text-5xl rounded-sm text-popover bg-primary' icon={<TbTableOptions />} clickHandler={() => {}} isDisabled={true}/>
+                <ButtonCommon label='share' icon={<IoMdShareAlt />} className='text-popover px-3 py-3 bg-primary rounded-sm' clickHandler={() => {}} isDisabled={true}/>
             </div>
         </div>
         <div className='h-[50px] border border-gray-500/25'></div>
