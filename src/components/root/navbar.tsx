@@ -18,8 +18,8 @@ const Navbar = () => {
             }
         </ul>
         <div className='inline-flex items-center gap-2'>
-            <ButtonCommon label='sign in' className=' text-popover bg-primary' clickHandler={() => {}}/>
-            <ButtonCommon label='sign up' className=' text-popover border border-primary' clickHandler={() => {}}/>
+            <ButtonCommon label='sign in' className=' text-popover bg-primary' clickHandler={() => {}} isDisabled={true}/>
+            <ButtonCommon label='sign up' className=' text-popover border border-primary' clickHandler={() => {}} isDisabled={true}/>
             {/* <Button className='p-3 rounded-sm bg-popover text-primary hover:bg-primary hover:text-popover'>
                 <FaUser className='text-3xl' />
             </Button> */}
