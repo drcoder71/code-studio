@@ -8,9 +8,6 @@ const App = () => {
       <Root>
         <Routes>
           <Route path="/" element={<HomePage />}/>
-          <Route path="snippet">
-            <Route path=":id" element={<SnippetPage />}/>
-          </Route>
           <Route path="code-studio" element={<CodeStudioPage />}/>
         </Routes>
       </Root>

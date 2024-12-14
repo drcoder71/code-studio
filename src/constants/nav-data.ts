@@ -11,11 +11,7 @@ export const NavData: NavDataType[] = [
         link: '/',
     },
     {
-        label: 'snippets',
-        link: '/snippet',
-    },
-    {
         label: 'studio',
         link: 'code-studio',
-    },
+    }
 ]
