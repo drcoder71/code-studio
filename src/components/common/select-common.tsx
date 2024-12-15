@@ -7,11 +7,10 @@ import {
 } from "@/components/ui/select"
 import { languageType } from "@/constants/programming-language-data"
 
-
 const SelectCommon = ({ title, data, clickHandler }: {
     title: string,
     data: languageType[],
-    clickHandler: VoidFunction
+    clickHandler: any
 }) => {
     return (
         <Select onValueChange={clickHandler}>

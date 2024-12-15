@@ -1,8 +1,6 @@
-import { ReactElement } from "react";
 import { BiLogoTypescript } from "react-icons/bi";
 import { FaPython } from "react-icons/fa";
 import { RiJavaLine, RiJavascriptFill } from "react-icons/ri";
-import { SiPython } from "react-icons/si";
 import { TbBrandCpp } from "react-icons/tb";
 
 export type languageType = {

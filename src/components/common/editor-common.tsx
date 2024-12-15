@@ -1,7 +1,7 @@
 import { useAppDispatch, useAppSelector } from "@/app/hooks";
-import { changeProgrammingLanguage, initialStateTypes, setInput } from "@/features/code-editor/code-editor-slice";
+import { changeProgrammingLanguage, setInput } from "@/features/code-editor/code-editor-slice";
 import { Editor } from "@monaco-editor/react";
-import { useEffect, useRef, useState } from "react";
+import { useEffect } from "react";
 
 const INITIAL_VALUE = "// some comment";
 const DEFAULT_LANGUAGE = "javascript";
