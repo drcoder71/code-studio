@@ -1,5 +1,3 @@
-import { ReactElement } from "react"
-
 export type NavDataType = {
     label: string,
     link: string

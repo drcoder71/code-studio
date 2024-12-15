@@ -1,5 +1,4 @@
 import { useAppSelector } from '@/app/hooks'
-import React from 'react'
 
 const OutputCommon = () => {
   const codeeditor = useAppSelector(state => state.codeeditor.codeeditor)

@@ -1,10 +1,10 @@
 import { ButtonCommon, LogoCommon } from '../common'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation, useNavigate, useNavigation, useRoutes } from 'react-router-dom'
 import { NavData } from '@/constants'
 import { NavDataType } from '@/constants/nav-data'
-import { FaUser } from "react-icons/fa";
 
 const Navbar = () => {
+
   return (
     <nav className='container mx-auto flex items-center justify-between py-4 px-4 border-b border-gray-500/25'>
         <LogoCommon className=''/>
@@ -18,8 +18,12 @@ const Navbar = () => {
             }
         </ul>
         <div className='inline-flex items-center gap-2'>
-            <ButtonCommon label='sign in' className=' text-popover bg-primary' clickHandler={() => {}} isDisabled={true}/>
-            <ButtonCommon label='sign up' className=' text-popover border border-primary' clickHandler={() => {}} isDisabled={true}/>
+            <Link to={'auth/sign-in'}>
+                <ButtonCommon label='sign in' className=' text-popover bg-primary' clickHandler={() => {}}/>
+            </Link>
+            <Link to={'auth/sign-up'}>
+                <ButtonCommon label='sign up' className=' text-popover border border-primary' clickHandler={() => {}} />
+            </Link>
             {/* <Button className='p-3 rounded-sm bg-popover text-primary hover:bg-primary hover:text-popover'>
                 <FaUser className='text-3xl' />
             </Button> */}
