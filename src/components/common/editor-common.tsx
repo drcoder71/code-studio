@@ -1,4 +1,5 @@
 import { useAppDispatch, useAppSelector } from "@/app/hooks";
+import { LANGUAGE_SNIPPETS } from "@/constants/programming-language-data";
 import { changeProgrammingLanguage, setInput } from "@/features/code-editor/code-editor-slice";
 import { Editor } from "@monaco-editor/react";
 import { useEffect } from "react";
@@ -16,8 +17,10 @@ const EditorCommon = () => {
     }, [])
 
     // const handleMount = (editor: any) => {
-    //     dispatch(setInput(editor))
-    //     editor.focus();
+    //     console.log(editor.value);
+
+    //     // dispatch(setInput(editor))
+    //     // editor.focus();
     // };
 
     const handleChange = (newValue: any) => {
@@ -29,8 +32,9 @@ const EditorCommon = () => {
             <Editor
                 height="100%"
                 theme="vs-dark"
+                // defaultValue={LANGUAGE_SNIPPETS[codeeditor.options.language] || codeeditor.inputText}
                 language={codeeditor.options.language}
-                value={codeeditor.inputText}
+                value={LANGUAGE_SNIPPETS[codeeditor.options.language] || codeeditor.inputText}
                 // onMount={handleMount}
                 onChange={handleChange}
                 options={{

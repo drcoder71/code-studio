@@ -1,5 +1,5 @@
 import { ButtonCommon, LogoCommon } from '../common'
-import { Link, NavLink, useLocation, useNavigate, useNavigation, useRoutes } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { NavData } from '@/constants'
 import { NavDataType } from '@/constants/nav-data'
 
@@ -17,16 +17,11 @@ const Navbar = () => {
                 ))
             }
         </ul>
-        <div className='inline-flex items-center gap-2'>
-            <Link to={'auth/sign-in'}>
-                <ButtonCommon label='sign in' className=' text-popover bg-primary' clickHandler={() => {}}/>
-            </Link>
-            <Link to={'auth/sign-up'}>
-                <ButtonCommon label='sign up' className=' text-popover border border-primary' clickHandler={() => {}} />
-            </Link>
-            {/* <Button className='p-3 rounded-sm bg-popover text-primary hover:bg-primary hover:text-popover'>
-                <FaUser className='text-3xl' />
-            </Button> */}
+          <div className='inline-flex items-center gap-2'>
+              <ButtonCommon label={'login'} className='text-popover bg-card' isDisabled={true} clickHandler={() => { }} />
+              <ButtonCommon label={'start now'} className='text-popover bg-card' isDisabled={true} clickHandler={() => { }} />
+              {/* <SignInButton>
+              </SignInButton> */}
         </div>
     </nav>
   )

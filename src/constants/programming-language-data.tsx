@@ -48,3 +48,20 @@ export const LANGUAGE_ICONS: any = {
     python: <FaPython />,
     cpp: <TbBrandCpp />
 }
+
+export const LANGUAGE_SNIPPETS: any = {
+    javascript: `const gretting = () => {
+    console.log("Hello Js")
+}
+    
+gretting()`,
+    typescript: `const gretting = () => {
+    console.log("Hello Ts")
+}
+    
+gretting()`,
+    python: `def gretting(x, y):
+    print("Hello Python)
+
+gretting()`
+}
