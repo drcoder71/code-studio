@@ -9,7 +9,7 @@ export const Provider = ({ children, ...props }: React.ComponentProps<typeof Nex
 
     return (
         <NextThemesProvider {...props}>
-            <ClerkProvider publishableKey="pk_test_...">
+            <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>
                 <ConvexProviderWithClerk client={convex} useAuth={useAuth}>
                     {children}
                 </ConvexProviderWithClerk>
